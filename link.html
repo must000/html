@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="mailto:scteerapat@brsu.ac.th">scteerapat@brsu.ac.th</a> <!--สร้างลิ้งเพื่อส่งอีเมลแอดเดรส-->
+
+    <!--ลิสต์ ไม่มีลำดับ-->
+    <!--type คือการกำหนดเครื่องหมายหัวข้อลิิสต์-->
+    <ul> รายการสินค้า
+    <li type="disc">สป</li>
+    <li type="circle">แชมพู</li> 
+    <li type="square">ยา</li>
+    <li>ยาสีฟัน</li> 
+    </ul>
+
+    <!--ลิสต์ มีลำดับ-->
+    <!--เลข-->
+    <ol type="1"> รายการสินค้า 
+    <li>สบู่</li>
+    <li>แชมพู</li> 
+    <li>ยา</li> 
+    <li>ยาสีฟัน<li>
+    </ol>
+        
+    <!--ตัวA-Z-->
+    <ol type="A"> รายการสินค้า 
+        <li>สบู่</li>
+        <li>แชมพู</li> 
+        <li>ยา</li> 
+        <li>ยาสีฟัน<li>
+    </ol>
+
+    <!--ฟอร์ม size คือความกว้าง-->
+        <input type="text" size="10" /><br />
+        <input type="text" size="20" /><br />
+        <input type="text" size="25" /><br>
+        <input type="text" maxlength="5" /><br> <!--maxlength คือ การกำหนดจำนวนตัวอักษรที่พิมพ์ได้-->
+    <!--placeholder คือ ไลน์น้ำ-->
+    <!--required id ต้องเหมือนกัน กดแล้วจะเด้งเข้ากล่องข้อความเลย-->
+        <form action="">
+            <label for="local">กรอกข้อมูล</label>
+            <input type="text" placeholder="กรอก" required id="local">
+        </form>
+    <!--วัน เดือน ปี-->
+    <input type="date"><br>
+
+    <input type="time"><br>
+                
+    <!--radio button-->
+    กรุณาระบุเพศ <br />
+<input type="radio" name="sex" value="male" />ชาย <br />
+<input type="radio" name="sex" value="female" />หญิง <br />
+<input type="radio" name="sex" value="other" />อื่นๆ <br />
+<!--check box-->
+กรุณาเลือกสีที่ชอบ (เลือกตอบได้มากกว่า 1 ข้อ)<br />
+<input type="checkbox" value="สีเหลือง" />สีเหลือง <br />
+<input type="checkbox" value="สีดำ" />สีดำ <br />
+<input type="checkbox" value="สีเขียว" />สีเขียว <br />
+
+<!--button แบบมีตัวเลือก-->
+<select name="car">
+    <option value="toyota">toyota</option>
+    <option value="honda">honda</option>
+    <option value="mazda">mazda</option>
+    </select>
+    <hr>
+
+<!--การสร้างปุ่ม-->
+<input type="submit" value="ok" />
+<input type="reset" value="clear" />
+<input type="button" value="click me" />
+
+<!--การกำหนดขนาดแผนที่-->
+<div id="map" style="width:400px; height:400px; background: yellow">My map will go here</div>
+
+    
+</body>
+</html>
